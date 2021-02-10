@@ -1,3 +1,4 @@
+Completed using SQLite3 in Jupyter Notebook
 Please complete this exercise using sqlite3 (the soccer data, above) and your Jupyter notebook.
 
 Which team scored the most points when playing at home?
