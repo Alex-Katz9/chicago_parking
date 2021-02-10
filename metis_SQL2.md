@@ -1,3 +1,5 @@
+Completed using SQLite3 in Jupyter Notebook
+
 Please complete this exercise using SQL Lite (i.e., the Lahman baseball data, above) and your Jupyter notebook.
 
 What was the total spent on salaries by each team, each year?
