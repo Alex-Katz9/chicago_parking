@@ -70,14 +70,14 @@ The median goals scored in a tie game is 1 for each team.
 
 __What percentage of players prefer their left or right foot? Hint: Calculate either the right or left foot, whichever is easier based on how you setup the problem.__
  
-WITH player_foot AS (SELECT player_api_id, preferred_foot
-FROM Player_Attributes
-GROUP BY player_api_id)
+WITH player_foot AS (SELECT player_api_id, preferred_foot  
+FROM Player_Attributes  
+GROUP BY player_api_id)  
 
-SELECT COUNT(* )
-FROM player_foot
-WHERE preferred_foot = 'left'
-;
+SELECT COUNT(* )  
+FROM player_foot  
+WHERE preferred_foot = 'left'  
+;  
 
 Repeat the above for right footed players.
 
