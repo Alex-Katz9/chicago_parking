@@ -2,8 +2,8 @@
 
 ## Contents
 
-Main Notebook for Loading Data: loading_data_chiparking
-Main Notebook for Modeling: modeling_notebook_chiparking
+Main Notebook for Loading Data: loading_data_chiparking  
+Main Notebook for Modeling: modeling_notebook_chiparking  
 
 Other notebooks for exploratory work and initial baseline models
 
