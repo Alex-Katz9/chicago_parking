@@ -1,5 +1,12 @@
 # Predicting the Payment or Non Payment of Chicago Parking Tickets
 
+## Contents
+
+Main Notebook for Loading Data: loading_data_chiparking
+Main Notebook for Modeling: modeling_notebook_chiparking
+
+Other notebooks for exploratory work and initial baseline models
+
 ## Data
 
 Data for this project came from [a ProPublica database](https://www.propublica.org/datastore/dataset/chicago-parking-ticket-data) which consists of both written tickets and tickets given by red light cameras. For the purpose of this project, only the written tickets were considered. Additionally, as the CSV consists of over 50 million observations, only the first million were used as a proof of concept, to limit computing power needs. 
