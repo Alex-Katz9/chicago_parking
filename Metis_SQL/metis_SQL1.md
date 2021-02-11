@@ -10,6 +10,7 @@ SELECT * FROM Customers
 WHERE Country='UK';
 
 __What is the name of the customer who has the most orders?__
+
 SELECT Orders.OrderID, Customers.CustomerName, COUNT(* )  
 FROM Orders LEFT JOIN Customers  
 ON Orders.CustomerID = Customers.CustomerID  
