@@ -90,7 +90,7 @@ SELECT name, first_serve
 FROM serving  
 ORDER BY first_serve DESC;
 
-The highest first serve percentage in a match was 93% by S Errani.
+The highest first serve percentage in a match was 93% by Sara Errani.
 
 __What are the unforced error percentages of the top three players with the most wins? (Unforced error percentage is % of points lost due to unforced errors. In a match, you have fields for number of points won by each player, and number of unforced errors for each field.)__
 
