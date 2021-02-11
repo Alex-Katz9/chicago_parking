@@ -2,10 +2,14 @@
 
 ## Contents
 
-Main Notebook for Loading Data: loading_data_chiparking  
-Main Notebook for Modeling: modeling_notebook_chiparking  
-
-Other notebooks for exploratory work and initial baseline models
+### Notebooks  
+1. Main Notebook for Loading Data: loading_data_chiparking  
+2. Main Notebook for Modeling: modeling_notebook_chiparking  
+3. Other notebooks for exploratory work and initial baseline models  
+### PDFs 
+1. Presentation slide deck  
+### SQL ReadMes  
+Submissions for Metis SQL assignments 1-4  
 
 ## Data
 
