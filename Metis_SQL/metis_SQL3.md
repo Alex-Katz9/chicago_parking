@@ -43,7 +43,8 @@ __How many players have Smith for their last name? How many have 'smith' anywher
 SELECT COUNT()  
 FROM Player  
 WHERE player_name LIKE '% Smith'  
-; SELECT COUNT()  
+;   
+SELECT COUNT()  
 FROM Player  
 WHERE player_name LIKE '%smith%'  
 ;
