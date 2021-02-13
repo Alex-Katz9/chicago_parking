@@ -26,11 +26,15 @@ The goal of the classification was to clearly separate paid from unpaid tickets,
 ## Initial Data Analysis
 
 Of these first million tickets, once the dataset had been cleaned for tickets with known outcomes, locations, and violations, there was wide distribution across the city. 
-![chloro_chi_parking](https://user-images.githubusercontent.com/68957343/107665364-fc3e6e00-6c52-11eb-97d0-bec780c4407b.PNG)  
+
+![chloro_chi_parking](https://user-images.githubusercontent.com/68957343/107665364-fc3e6e00-6c52-11eb-97d0-bec780c4407b.PNG =10x2)
+
 In the above image, darker colored zip codes relate to a greater accumulation of tickets (up to 18000), while the lighter colors tend toward lower values. There seem to be a few zip codes across the city with higher and lower occurences of ticket, but in general the frequency tends to increase as population density increases in the Near North and Near West areas surrounding the main business district of The Loop. 
 
 Exploratory data analysis  on potential features was completed to determine if any features showed separability on the target. Across numerous featuers, there was not a clear separation in payment, as seen in the example below:  
+
 ![lat_long_payment](https://user-images.githubusercontent.com/68957343/107664904-7fab8f80-6c52-11eb-87a9-e41f1ddbee7e.PNG)
+
 This plot shows tickets which were paid in blue and those unpaid in red. Across the city of Chicago, the blue and red observations did not have a discernable pattern. This was similarly seen in the value of the fine, the different violations, and others. So, in order to determine methods of separation beyond these, I turned to constructing models to identify and make use of the culmination of features. 
 
 It is also important to note that the tickets are not balanced between paid and unpaid. In fact, there were about twice as many paid tickets as unpaid tickets in my dataset
