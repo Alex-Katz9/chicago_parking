@@ -27,13 +27,13 @@ The goal of the classification was to clearly separate paid from unpaid tickets,
 
 Of these first million tickets, once the dataset had been cleaned for tickets with known outcomes, locations, and violations, there was wide distribution across the city. 
 
-![chloro_chi_parking](https://user-images.githubusercontent.com/68957343/107665364-fc3e6e00-6c52-11eb-97d0-bec780c4407b.PNG =10x2)
+<img src="https://user-images.githubusercontent.com/68957343/107665364-fc3e6e00-6c52-11eb-97d0-bec780c4407b.PNG" height="400" class="center" />
 
 In the above image, darker colored zip codes relate to a greater accumulation of tickets (up to 18000), while the lighter colors tend toward lower values. There seem to be a few zip codes across the city with higher and lower occurences of ticket, but in general the frequency tends to increase as population density increases in the Near North and Near West areas surrounding the main business district of The Loop. 
 
 Exploratory data analysis  on potential features was completed to determine if any features showed separability on the target. Across numerous featuers, there was not a clear separation in payment, as seen in the example below:  
 
-![lat_long_payment](https://user-images.githubusercontent.com/68957343/107664904-7fab8f80-6c52-11eb-87a9-e41f1ddbee7e.PNG)
+<img src="https://user-images.githubusercontent.com/68957343/107664904-7fab8f80-6c52-11eb-87a9-e41f1ddbee7e.PNG" height="400" class="center" />
 
 This plot shows tickets which were paid in blue and those unpaid in red. Across the city of Chicago, the blue and red observations did not have a discernable pattern. This was similarly seen in the value of the fine, the different violations, and others. So, in order to determine methods of separation beyond these, I turned to constructing models to identify and make use of the culmination of features. 
 
@@ -49,11 +49,11 @@ After using a random oversampling method to rebalance the training data across t
 
 In an attempt to improve AUC, but potentially lose some interpretability, Random Forest and XGBoost models were fit to the unbalanced and balanced training sets and showed better AUC results than the logistics models immediately. These out of the box results suggest that there is some room for improvement down the road by additional work tuning hyperparameters. Both models fit to the balanced data were right around .70 AUC on the validation data, those were the benchmarks going forward. Similarly, both models' confusion matrices were strikingly similar, so, for the time being, not much separated the two. 
 
-![confusion_matrices](https://user-images.githubusercontent.com/68957343/107853945-4bfd7080-6dde-11eb-95b4-ba69fd4fdc28.PNG)  
+<img src="https://user-images.githubusercontent.com/68957343/107853945-4bfd7080-6dde-11eb-95b4-ba69fd4fdc28.PNG" height="400" class="center" />
 
 In comparing their performance on the unbalanced holdout test data, the XGBoost model showed slightly better performance, not just by AUC but on additional metrics of accuracy, precision, and recall. For this reason, at this time, XGBoost would be the model for continued investigation on future deployment. 
 
-![roc_aucs](https://user-images.githubusercontent.com/68957343/107853948-50298e00-6dde-11eb-9e15-dd0d93ec10e1.PNG)
+<img src="https://user-images.githubusercontent.com/68957343/107853948-50298e00-6dde-11eb-9e15-dd0d93ec10e1.PNG" height="400" class="center" />
 
 ## Next Steps
 
