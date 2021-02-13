@@ -27,7 +27,7 @@ The goal of the classification was to clearly separate paid from unpaid tickets,
 
 Of these first million tickets, once the dataset had been cleaned for tickets with known outcomes, locations, and violations, there was wide distribution across the city. 
 
-<img src="https://user-images.githubusercontent.com/68957343/107665364-fc3e6e00-6c52-11eb-97d0-bec780c4407b.PNG" height="400" class="center" />
+<img src="https://user-images.githubusercontent.com/68957343/107665364-fc3e6e00-6c52-11eb-97d0-bec780c4407b.PNG" height="400" align="middle" />
 
 In the above image, darker colored zip codes relate to a greater accumulation of tickets (up to 18000), while the lighter colors tend toward lower values. There seem to be a few zip codes across the city with higher and lower occurences of ticket, but in general the frequency tends to increase as population density increases in the Near North and Near West areas surrounding the main business district of The Loop. 
 
